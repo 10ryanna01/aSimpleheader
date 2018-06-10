@@ -2,8 +2,17 @@
   "name": "asimpleheader",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.6",
+    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
   },
   "devDependencies": {
     "chai": "^4.1.2",

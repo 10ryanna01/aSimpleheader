@@ -1,0 +1,63 @@
+/////// _theme.scss
+//////contains place holders for typography 
+///////and variables for theme color 
+
+
+
+//colors
+$support:  #73B90D;
+$sales-text: #0B9DDA;
+$dark-copy: #1E4B60;
+$light-copy: #ffffff;
+$mobile-dark: #13313F;
+
+
+// placeholders
+%header__navigation-text {
+    font-family: OpenSans-Bold;
+    font-size: 1.8rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+.header__navigation-text {
+    @extend %header__navigation-text;
+
+}
+
+
+%contact-icon{
+    background: $support;
+    border-radius: 5rem;
+    padding: 5px 8px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    &:after {
+        content: 'contact';
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: -5px;
+        color: $dark-copy;
+        height: 20px;
+
+    }
+}
+
+.contact-icon {
+    @extend %contact-icon;
+}
+
+%contact-icon-large{
+    @extend %contact-icon;
+    width: 50px;
+    padding: 15px;
+    border-radius: 100%;   
+    &:after{
+        display: none;
+    }
+}
+.contact-icon-large {
+ @extend %contact-icon-large;
+
+}

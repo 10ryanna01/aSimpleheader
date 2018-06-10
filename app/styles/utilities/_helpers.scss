@@ -1,0 +1,51 @@
+/// add resets or layout helpers here
+.col-centered {
+    float: none;
+    margin: 0 auto;
+  }
+  
+  .js-show {
+    display: block !important;
+  }
+  
+  .add--height {
+    height: 5000px
+  }
+  
+  .m-0 {
+    margin: 0;
+  }
+  .p-0 {
+      padding: 0;
+  }
+  
+  // media queries short codes  for debuging
+  // Mobile first
+  // body{
+  // 	border: solid 4px red;
+  // }
+  // // Very small devices (tablets, 480px and up)
+  // @media (min-width: $screen-xs-min) {
+  // 	body{
+  // 		border: solid 4px pink;
+  // 	}
+  // }
+  // // Small devices (tablets, 768px and up)
+  // @media (min-width: $screen-sm-min) {
+  // 	body{
+  // 		border: solid 4px orange;
+  // 	}
+  // }
+  // // Medium devices (desktops, 992px and up)
+  // @media (min-width: $screen-md-min) {
+  // 	body{
+  // 		border: solid 4px green;
+  // 	}	
+  // }
+  // // Large devices (large desktops, 1200px and up)
+  // @media (min-width: $screen-lg-min) {
+  // 	body{
+  // 		border: solid 4px yellow;
+  // 	}
+  // }
+  // /*  end debug

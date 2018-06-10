@@ -1,0 +1,65 @@
+.contact {
+    &__icon {
+      &__img {
+        @extend .contact-icon;
+        @media (max-width: $screen-sm-max) {
+          position: fixed;
+          left: 50%;
+          top: 10px;
+        }
+      }
+    }
+    &__nav {
+      @extend .header__navigation-text;
+      @media (max-width: $screen-md-max) {
+        strong {
+          display: block; //style html element just for this demo
+        }
+      }
+ 
+      &--sales {
+        color: $sales-text;
+         &:focus, &:hover {
+          color: $sales-text;
+          background-color: transparent !important; // overriding instead of rewriting bootstrap just for this demo 
+        }
+      }
+      &--support {
+        color: $support;
+        &:focus, &:hover {
+          color: $support;
+          background-color: transparent !important; // overriding instead of rewriting bootstrap just for this demo 
+        }
+      }
+      .contact__nav--quote { //bootstrap workaround
+        font-size: 14px;
+        color: $light-copy;
+        background-color: $support;
+        border-radius: 0 !important;
+        padding: 28px;
+        &:focus, &:hover {
+          color: $light-copy;
+          background-color: $support !important; // overriding instead of rewriting bootstrap just for this demo 
+        }
+      }
+    }
+    &__body {
+      position: relative;
+      display: none;
+      background: $mobile-dark;
+      padding: 1em;
+      min-height: 100vh;
+      top: 37px; 
+      overflow: hidden;
+      &__icon {
+        &__contact__img {
+          @extend %contact-icon-large;
+          @media (max-width: $screen-sm-max) {
+            position: fixed;
+            top: 20%;
+            left: 48%;
+          }
+        }
+      }
+    }
+  }
